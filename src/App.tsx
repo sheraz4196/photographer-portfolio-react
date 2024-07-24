@@ -1,4 +1,5 @@
 import "./App.css";
+import CarouselGallery from "./components/homepage/carousel-gallery";
 import Hero from "./components/homepage/hero";
 import Navbar from "./components/homepage/navbar";
 import Services from "./components/homepage/services";
@@ -11,6 +12,7 @@ function App() {
         <Navbar />
         <Hero />
         <Services />
+        <CarouselGallery />
       </section>
     </>
   );

@@ -6,7 +6,6 @@ import {
   CarouselPrevious,
 } from "../ui/carousel";
 import { Button } from "../ui/button";
-import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 
 export default function CarouselGallery() {
@@ -51,10 +50,10 @@ export default function CarouselGallery() {
         className="bg-inverted rounded-none absolute bottom-12 right-12"
         asChild
       >
-        <Link href={"#"} className="flex items-center gap-2.5">
+        <a href={"#"} className="flex items-center gap-2.5">
           View ALll
           <ChevronRight height={12} width={12} />
-        </Link>
+        </a>
       </Button>
     </section>
   );

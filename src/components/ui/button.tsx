@@ -1,29 +1,29 @@
-import * as React from "react"
-import { Slot } from "@radix-ui/react-slot"
-import { cva, type VariantProps } from "class-variance-authority"
+import * as React from "react";
+import { Slot } from "@radix-ui/react-slot";
+import { cva, type VariantProps } from "class-variance-authority";
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-  "tailwind.config.jsinline-flex tailwind.config.jsitems-center tailwind.config.jsjustify-center tailwind.config.jswhitespace-nowrap tailwind.config.jsrounded-md tailwind.config.jstext-sm tailwind.config.jsfont-medium tailwind.config.jsring-offset-white tailwind.config.jstransition-colors focus-visible:tailwind.config.jsoutline-none focus-visible:tailwind.config.jsring-2 focus-visible:tailwind.config.jsring-zinc-950 focus-visible:tailwind.config.jsring-offset-2 disabled:tailwind.config.jspointer-events-none disabled:tailwind.config.jsopacity-50 dark:tailwind.config.jsring-offset-zinc-950 dark:focus-visible:tailwind.config.jsring-zinc-300",
+  "inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
   {
     variants: {
       variant: {
-        default: "tailwind.config.jsbg-zinc-900 tailwind.config.jstext-zinc-50 hover:tailwind.config.jsbg-zinc-900/90 dark:tailwind.config.jsbg-zinc-50 dark:tailwind.config.jstext-zinc-900 dark:hover:tailwind.config.jsbg-zinc-50/90",
+        default: "bg-primary text-primary-foreground hover:bg-primary/90",
         destructive:
-          "tailwind.config.jsbg-red-500 tailwind.config.jstext-zinc-50 hover:tailwind.config.jsbg-red-500/90 dark:tailwind.config.jsbg-red-900 dark:tailwind.config.jstext-zinc-50 dark:hover:tailwind.config.jsbg-red-900/90",
+          "bg-destructive text-destructive-foreground hover:bg-destructive/90",
         outline:
-          "tailwind.config.jsborder tailwind.config.jsborder-zinc-200 tailwind.config.jsbg-white hover:tailwind.config.jsbg-zinc-100 hover:tailwind.config.jstext-zinc-900 dark:tailwind.config.jsborder-zinc-800 dark:tailwind.config.jsbg-zinc-950 dark:hover:tailwind.config.jsbg-zinc-800 dark:hover:tailwind.config.jstext-zinc-50",
+          "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
         secondary:
-          "tailwind.config.jsbg-zinc-100 tailwind.config.jstext-zinc-900 hover:tailwind.config.jsbg-zinc-100/80 dark:tailwind.config.jsbg-zinc-800 dark:tailwind.config.jstext-zinc-50 dark:hover:tailwind.config.jsbg-zinc-800/80",
-        ghost: "hover:tailwind.config.jsbg-zinc-100 hover:tailwind.config.jstext-zinc-900 dark:hover:tailwind.config.jsbg-zinc-800 dark:hover:tailwind.config.jstext-zinc-50",
-        link: "tailwind.config.jstext-zinc-900 tailwind.config.jsunderline-offset-4 hover:tailwind.config.jsunderline dark:tailwind.config.jstext-zinc-50",
+          "bg-secondary text-secondary-foreground hover:bg-secondary/80",
+        ghost: "hover:bg-accent hover:text-accent-foreground",
+        link: "text-primary underline-offset-4 hover:underline",
       },
       size: {
-        default: "tailwind.config.jsh-10 tailwind.config.jspx-4 tailwind.config.jspy-2",
-        sm: "tailwind.config.jsh-9 tailwind.config.jsrounded-md tailwind.config.jspx-3",
-        lg: "tailwind.config.jsh-11 tailwind.config.jsrounded-md tailwind.config.jspx-8",
-        icon: "tailwind.config.jsh-10 tailwind.config.jsw-10",
+        default: "h-10 px-4 py-2",
+        sm: "h-9 rounded-md px-3",
+        lg: "h-11 rounded-md px-8",
+        icon: "h-10 w-10",
       },
     },
     defaultVariants: {
@@ -31,26 +31,26 @@ const buttonVariants = cva(
       size: "default",
     },
   }
-)
+);
 
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
     VariantProps<typeof buttonVariants> {
-  asChild?: boolean
+  asChild?: boolean;
 }
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant, size, asChild = false, ...props }, ref) => {
-    const Comp = asChild ? Slot : "button"
+    const Comp = asChild ? Slot : "button";
     return (
       <Comp
         className={cn(buttonVariants({ variant, size, className }))}
         ref={ref}
         {...props}
       />
-    )
+    );
   }
-)
-Button.displayName = "Button"
+);
+Button.displayName = "Button";
 
-export { Button, buttonVariants }
+export { Button, buttonVariants };
