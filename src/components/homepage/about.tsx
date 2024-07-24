@@ -13,7 +13,7 @@ export default function About() {
         />
       </div>
       <div className="p-12 flex flex-col gap-5 flex-1">
-        <h6 className="text-2xl font-bold">About</h6>
+        <h6 className="text-2xl text-dark font-bold">About</h6>
         <p className="text-dark-slate">
           Lorem ipsum dolor sit amet consectetur. In leo nunc tincidunt
           tristique elementum. In id urna porttitor vulputate mattis morbi

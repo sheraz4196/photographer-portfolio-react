@@ -1,4 +1,5 @@
 import "./App.css";
+import About from "./components/homepage/about";
 import CarouselGallery from "./components/homepage/carousel-gallery";
 import Hero from "./components/homepage/hero";
 import Navbar from "./components/homepage/navbar";
@@ -11,9 +12,10 @@ function App() {
         <div className="absolute inset-0 -z-10 bg-black opacity-50"></div>
         <Navbar />
         <Hero />
-        <Services />
-        <CarouselGallery />
       </section>
+      <Services />
+      <CarouselGallery />
+      <About />
     </>
   );
 }
