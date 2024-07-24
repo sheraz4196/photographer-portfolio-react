@@ -1,6 +1,7 @@
 import "./App.css";
 import Hero from "./components/homepage/hero";
 import Navbar from "./components/homepage/navbar";
+import Services from "./components/homepage/services";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         <div className="absolute inset-0 -z-10 bg-black opacity-50"></div>
         <Navbar />
         <Hero />
+        <Services />
       </section>
     </>
   );
