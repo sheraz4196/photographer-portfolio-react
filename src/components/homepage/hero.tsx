@@ -1,5 +1,3 @@
-import Link from "next/link";
-import React from "react";
 import Carotsvg from "../svgs/carot-svg";
 import TwitterSvg from "../svgs/logos/twitter-svg";
 import FacebookSvg from "../svgs/logos/facebook-svg";
@@ -13,18 +11,18 @@ export default function Hero() {
         <div className=" relative">
           <div className="w-1 h-40 bg-white mb-3 ml-2"></div>
           <div className="flex flex-col gap-3">
-            <Link href="/">
+            <a href="/">
               <TwitterSvg />
-            </Link>
-            <Link href="/">
+            </a>
+            <a href="/">
               <FacebookSvg />
-            </Link>
-            <Link href="/">
+            </a>
+            <a href="/">
               <InstaSvg />
-            </Link>
-            <Link href="/">
+            </a>
+            <a href="/">
               <BeSvg />
-            </Link>
+            </a>
           </div>
 
           <div className="w-1 h-40 bg-white mt-3 ml-2"></div>
@@ -38,13 +36,13 @@ export default function Hero() {
             imperdiet in scelerisque.
           </p>
           <div className="mt-4 md:mt-8">
-            <Link
+            <a
               href="/"
               className="text-inverted flex items-center justify-center gap-2 w-1/2 md:w-1/4 border-2 border-inverted px-6 py-2 hover:bg-inverted hover:text-white transition duration-300 ease-in-out  "
             >
               Hire Me
               <Carotsvg className="size-3 group-hover:fill-white group-hover:stroke-white" />
-            </Link>
+            </a>
           </div>
         </div>
       </div>

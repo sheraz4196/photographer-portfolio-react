@@ -1,7 +1,4 @@
-"use client";
-
-import Link from "next/link";
-import React, { useState } from "react";
+import { useState } from "react";
 import NavLogo from "../svgs/nav-logo";
 import Menusvg from "../svgs/logos/menu-svg";
 import XIconsvg from "../svgs/logos/x-svg";
@@ -22,13 +19,13 @@ export default function Navbar() {
           <ul className="hidden md:flex gap-8">
             {NavLinks.map((link, index) => (
               <li key={index}>
-                <Link
+                <a
                   href="#"
                   className="hover:text-gray-300 flex items-center justify-center gap-3 font-semibold text-xs uppercase"
                 >
                   <span>{link}</span>
                   {/* <DiamondSvg /> */}
-                </Link>
+                </a>
               </li>
             ))}
             <li>
@@ -63,12 +60,12 @@ export default function Navbar() {
         <ul className="flex flex-col pl-8 gap-4 justify-center">
           {["Home", "About", "Contact"].map((link, index) => (
             <li key={index}>
-              <Link
+              <a
                 href="#"
                 className="relative pb-1.5  text-sm font-medium uppercase hover:text-inverted transition duration-300 ease-in-out"
               >
                 {link}
-              </Link>
+              </a>
             </li>
           ))}
         </ul>
