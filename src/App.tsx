@@ -3,7 +3,9 @@ import About from "./components/homepage/about";
 import CarouselGallery from "./components/homepage/carousel-gallery";
 import Hero from "./components/homepage/hero";
 import Navbar from "./components/homepage/navbar";
+import Pricing from "./components/homepage/pricing";
 import Services from "./components/homepage/services";
+import Video from "./components/homepage/videro";
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
       <Services />
       <CarouselGallery />
       <About />
+      <Pricing />
     </>
   );
 }
