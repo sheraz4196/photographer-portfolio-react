@@ -1,10 +1,9 @@
-import Image from "next/image";
 import PlaySvg from "../svgs/icons/play-svg";
 
 export default function Video() {
   return (
     <section className="relative">
-      <Image
+      <img
         src={"/assets/video-thumbnail.png"}
         width={1280}
         height={600}

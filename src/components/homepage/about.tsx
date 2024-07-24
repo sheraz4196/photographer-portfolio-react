@@ -1,4 +1,3 @@
-import Image from "next/image";
 import DegreeSvg from "../svgs/icons/degree-svg";
 import SuitcaseSvg from "../svgs/icons/suitcase-svg";
 
@@ -6,7 +5,7 @@ export default function About() {
   return (
     <section className="p-12 bg-dark-blue flex flex-col lg:flex-row items-center justify-center">
       <div className="flex items-center">
-        <Image
+        <img
           src={"/assets/personal.png"}
           alt="Person"
           height={400}

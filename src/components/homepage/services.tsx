@@ -17,7 +17,7 @@ export default function Services() {
           description="placerat euismod. Blandit facilisis hac leo morbi. "
         />
         <ServiceCard
-          icon={<ImageIcon width={40} height={40} />}
+          icon={<imgIcon width={40} height={40} />}
           heading="Retouch"
           description="placerat euismod. Blandit facilisis hac leo morbi. "
         />

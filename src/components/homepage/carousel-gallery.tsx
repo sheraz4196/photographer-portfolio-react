@@ -1,4 +1,3 @@
-import Image from "next/image";
 import {
   Carousel,
   CarouselContent,
@@ -16,7 +15,7 @@ export default function CarouselGallery() {
       <Carousel>
         <CarouselContent className="gap-0">
           <CarouselItem className="basis-1/3 pl-0">
-            <Image
+            <img
               src={"/assets/gallery/gallery-1.png"}
               width={226}
               height={600}
@@ -25,7 +24,7 @@ export default function CarouselGallery() {
             />
           </CarouselItem>
           <CarouselItem className="basis-1/3 !pl-0">
-            <Image
+            <img
               src={"/assets/gallery/gallery-2.png"}
               width={226}
               height={600}
@@ -34,7 +33,7 @@ export default function CarouselGallery() {
             />
           </CarouselItem>
           <CarouselItem className="basis-1/3 !pl-0">
-            <Image
+            <img
               src={"/assets/gallery/gallery-3.png"}
               width={226}
               height={600}
