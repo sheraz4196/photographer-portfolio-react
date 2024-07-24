@@ -27,7 +27,7 @@ export default function PricingCard({
           </li>
         ))}
       </ol>
-      <Button className="uppercase rounded-none bg-inverted hover:bg-inverted/80">
+      <Button className="uppercase rounded-none bg-inverted hover:bg-inverted/80 text-dark-foreground">
         <span>Buy now</span>
         <ChevronRight />
       </Button>

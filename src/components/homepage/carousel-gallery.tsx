@@ -47,7 +47,7 @@ export default function CarouselGallery() {
         </div>
       </Carousel>
       <Button
-        className="bg-inverted rounded-none absolute bottom-12 right-12"
+        className="bg-inverted text-dark-foreground rounded-none absolute bottom-12 right-12"
         asChild
       >
         <a href={"#"} className="flex items-center gap-2.5">

@@ -101,7 +101,7 @@ export default function ContactForm() {
             </FormItem>
           )}
         />
-        <Button className="bg-inverted gap-2.5">
+        <Button className="bg-inverted gap-2.5 text-dark-foreground">
           {isLoading ? (
             <>
               <span>Sending...</span>
