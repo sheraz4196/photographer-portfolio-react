@@ -1,6 +1,7 @@
 import "./App.css";
 import About from "./components/homepage/about";
 import CarouselGallery from "./components/homepage/carousel-gallery";
+import ContactUs from "./components/homepage/contact-us";
 import Hero from "./components/homepage/hero";
 import Navbar from "./components/homepage/navbar";
 import Pricing from "./components/homepage/pricing";
@@ -20,6 +21,7 @@ function App() {
       <About />
       <Pricing />
       <Video />
+      <ContactUs />
     </>
   );
 }
