@@ -19,6 +19,7 @@ function App() {
       <CarouselGallery />
       <About />
       <Pricing />
+      <Video />
     </>
   );
 }
